@@ -1,6 +1,8 @@
 # Building a sentiment analysis system with Naïve Bayes
 
-This project requires us to build a sentiment analysis system on the given dataset – IMDB Movie review. We have to train a natural language processing (NLP) model based on the Naïve Bayes classifier to distinguish whether the review is positive or negative. There are both train data and test data. The goal is to figure out some ways to predict the correct sentiment, as well as maximize the F1 score.
+This project requires us to build a sentiment analysis system on the given dataset – IMDB Movie review. We have to train a natural language processing (NLP) model based on the Naïve Bayes classifier to distinguish whether the review is positive or negative. A set of 25,000 highly polar movie reviews for training and 25,000 for testing procided. The goal is to figure out some ways to predict the correct sentiment, as well as maximize the F1 score.
+
+Data Download Link: https://www.kaggle.com/datasets/lakshmi25npathi/imdb-dataset-of-50k-movie-reviews
 
 # Major Challenge
 The major challenge of this project is to build the sentiment analysis system with Naïve Bayes from scratch. Third party libraries are NOT allowed for construction of Naïve Bayes classifier and F1 measure calculation. 
@@ -8,19 +10,16 @@ The major challenge of this project is to build the sentiment analysis system wi
 # Attributes
 | Column ID |         Column Name        | Data type |       Description         |
 |:---------:|:--------------------------:|:---------:|:-------------------------:|
-|     0     |           data_ID          |   int64   |    Unique ID of review    |
-|     1     |            type            |   object  |       test/train          |
-|     2     |           review           |   int64   |         review            |
-|     3     |           label            |   object  |     positive/negative     |
-|     4     |            file            |   object  |   Not useful in the task  |
+|     0     |           review           |   int64   |         review            |
+|     1     |           label            |   object  |     positive/negative     |
+
 
 # Implemetation
 
 ### Data Pre-Processing
 
-First of all, use pandas to read the csv file and choose 3 columns (type, review, label) and place
-them into pandas dataframe. Then, remove all the unlabelled samples by filtering out all the rows
-in which their labels are equal to ‘unsup’.
+First of all, use pandas to read the csv file and choose 2 columns (review, label) and place
+them into pandas dataframe. Then, remove all the unlabelled samples by filtering out all the rows.
 After that, use the regular expression to remove all the remove non-English characters from
 review. Then, change all the characters in review to lower case. Then, split the review into the list
 of words, that means all single words in the review become the elements of the list.
