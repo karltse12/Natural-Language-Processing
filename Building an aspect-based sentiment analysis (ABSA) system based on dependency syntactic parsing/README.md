@@ -11,6 +11,7 @@ This project is to build an aspect-based sentiment analysis (ABSA) system based 
 4) Calculating the Precision and Recall for each rule for evaluation. A Jupyter Notebook with Python kernel is used to work on this project.
 
 # Dataset
+
 ![pic1](https://user-images.githubusercontent.com/57484350/177001793-9afc1898-74b3-472f-95f1-65afca256d5d.jpg)
 
 The dataset (Restaurant.xml) used in this project is a collection of reviews on restaurant, including their food, service etc. It contains fields like sentence id, sentence text, aspect term, aspect term polarity, aspect term span, aspect category, aspect category polarity. And only sentence text, aspect term and aspect term polarity need to be considered.
@@ -34,7 +35,8 @@ Dependency Parsing is the process to analyze the grammatical structure in a sent
 The traditional linguistic notion of grammatical relation provides the basis for the grammatical relation binary relations that comprise these dependency structures. The arguments to these head relations consist of a head and a dependent. There, the head word of a constituent was the central organizing word of a larger constituent (e.g, the primary noun in a noun phrase, or verb in a verb phrase). The remaining words in the constituent are either direct, or indirect, dependents of their head. In dependency-based approaches, the head-dependent relationship is made explicit by directly linking heads to the words that are immediately dependent on them, bypassing the need for constituent structures.
   
 Below graph show some of the dependency relations:
-  ![pic2](https://user-images.githubusercontent.com/57484350/177001857-5ef2d171-5d81-4757-8f13-0dd900ea67e4.JPG)
+
+![pic2](https://user-images.githubusercontent.com/57484350/177001857-5ef2d171-5d81-4757-8f13-0dd900ea67e4.JPG)
   
 Example Sentence: ‘The boy is clever.’
   
